@@ -51,7 +51,7 @@ h1, h2, h3, h4, .nav-links a, .main-btn, .sub-btn, .cta-btn, .feature-card p, .a
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap; /* Ensure logo and nav-links stay on the same line */
+    flex-wrap: nowrap; 
 }
 
 .logo {
@@ -323,8 +323,8 @@ h1, h2, h3, h4, .nav-links a, .main-btn, .sub-btn, .cta-btn, .feature-card p, .a
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Ensure text is centered */
+    align-items: center; 
+    text-align: center; 
 }
 
 .feature-card::before {
@@ -357,9 +357,8 @@ h1, h2, h3, h4, .nav-links a, .main-btn, .sub-btn, .cta-btn, .feature-card p, .a
     margin-bottom: 20px;
     transition: transform 0.3s ease;
     display: block;
-    margin-left: auto; /* Center the image */
-    margin-right: auto; /* Center the image */
-}
+    margin-left: auto; 
+    margin-right: auto; 
 
 .feature-card:hover img {
     transform: scale(1.1);
@@ -748,13 +747,13 @@ h1, h2, h3, h4, .nav-links a, .main-btn, .sub-btn, .cta-btn, .feature-card p, .a
     }
 
     .nav-container {
-        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        flex-wrap: wrap; 
     }
 
     .logo {
-        margin-right: 0; /* Remove right margin in responsive view */
-        margin-left: 0; /* Align logo to the left */
-        order: -1; /* Move logo to the start of flex order */
+        margin-right: 0; 
+        margin-left: 0; 
+        order: -1; 
         float: left;
     }
    
@@ -763,7 +762,7 @@ h1, h2, h3, h4, .nav-links a, .main-btn, .sub-btn, .cta-btn, .feature-card p, .a
 @media (max-width: 768px) {
     .nav-container {
         padding: 10px 15px;
-        flex-wrap: nowrap; /* Keep logo and mobile menu on same line */
+        flex-wrap: nowrap; 
     }
 
     .logo img {
@@ -848,9 +847,9 @@ h1, h2, h3, h4, .nav-links a, .main-btn, .sub-btn, .cta-btn, .feature-card p, .a
     }
 
     .logo {
-        margin-right: 0; /* Remove right margin in responsive view */
-        margin-left: 10px; /* Align logo to the left with small padding */
-        order: -1; /* Move logo to the start of flex order */
+        margin-right: 0; 
+        margin-left: 10px; 
+        order: -1; 
     }
 }
 
