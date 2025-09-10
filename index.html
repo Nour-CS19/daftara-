@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>برنامج إدارة الصيدليات - دفترة</title>
+    <meta name="description" content="إدارة المخزون من الأدوية والمستلزمات الطبية تتبع الأدوية والمستحضرات برقم الشحنة وتاريخ الصلاحية ملف لكل عميل يحفظ تاريخ العمليات وتوصيل الأدوية">
+    <meta name="keywords" content="برنامج ادارة الصيدليات, برنامج حسابات صيدلية, برنامج حسابات للصيدليات, برنامج مبيعات صيدلية">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="#" class="logo">
+                    <img src="./logo.jpg" alt="Daftara Pharmacy Management System" 
+     style="object-fit: cover; background: #fff;" >
+                </a>
+                
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#features">المزايا</a></li>
+                    <li><a href="#analytics">تحليل المخزون</a></li>
+                    <li><a href="#testimonials">آراء العملاء</a></li>
+                    <li><a href="#demo-medicines">إدارة الأدوية</a></li>
+                    <li><a href="#demo-customers">إدارة العملاء</a></li>
+                    <li><a href="#pricing">الأسعار</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="#" class="sub-btn">تسجيل الدخول</a></li>
+                    <li><a href="#" class="main-btn" style="background: #42b72a; width: 100px; text-align: center;">ابدأ مجاناً</a></li>
+                </ul>
+                
+                <div class="mobile-menu" id="mobileMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1>برنامج إدارة الصيدليات</h1>
+                    <p>
+                        في برنامج دفترة لإدارة الصيدليات يمكنك إضافة الأدوية شاملة اسم الدواء وكود الدواء وتاريخ الانتهاء وكافة التفاصيل الهامة، مع السماح بإضافة ملفات المرضى وإدراج شركات التأمين المُسجَّل عليها المريض.
+                    </p>
+                    
+                    <ul class="hero-features">
+                        <li><i class="fas fa-check-circle"></i> إدارة المخزون من الأدوية والمستلزمات الطبية</li>
+                        <li><i class="fas fa-check-circle"></i> تتبع الأدوية والمستحضرات برقم الشحنة وتاريخ الصلاحية</li>
+                        <li><i class="fas fa-check-circle"></i> ملف لكل عميل يحفظ تاريخ العمليات وتوصيل الأدوية</li>
+                        <li><i class="fas fa-check-circle"></i> إدارة شركات التأمين الطبي وحساب التأمين في الفاتورة</li>
+                        <li><i class="fas fa-check-circle"></i> تطبيق نقاط البيع وإصدار الفواتير الإلكترونية بسهولة</li>
+                    </ul>
+                    
+                    <div class="hero-actions">
+                        <a href="#" class="main-btn">ابدأ الاستخدام مجاناً</a>
+                        <a href="#features" class="sub-btn">اكتشف المزايا</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image slide-in-right">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 500 400'><rect width='500' height='400' fill='%23f0f8ff'/><rect x='75' y='75' width='350' height='250' rx='15' fill='white' stroke='%23ddd'/><circle cx='125' cy='125' r='25' fill='%2342b72a'/><rect x='175' y='100' width='200' height='15' rx='7' fill='%23ddd'/><rect x='175' y='125' width='150' height='10' rx='5' fill='%23bbb'/><rect x='75' y='175' width='350' height='2' fill='%23eee'/><rect x='100' y='200' width='100' height='80' rx='7' fill='%23f8f9fa' stroke='%23dee2e6'/><rect x='225' y='200' width='100' height='80' rx='7' fill='%23f8f9fa' stroke='%23dee2e6'/><rect x='350' y='200' width='100' height='80' rx='7' fill='%23f8f9fa' stroke='%23dee2e6'/><text x='250' y='40' text-anchor='middle' font-family='Arial' font-size='20' fill='%23333'>نظام إدارة الصيدليات</text></svg>" alt="برنامج إدارة الصيدليات">
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>مزايا النظام</h2>
+                <p>اكتشف كيف يساعدك نظام دفترة في إدارة صيدليتك بكفاءة وفعالية</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><rect width='80' height='80' fill='%2342b72a' rx='15'/><path d='M25 40h30M40 25v30' stroke='white' stroke-width='4' stroke-linecap='round'/></svg>" alt="إدارة العملاء">
+                    <h3>إدارة العملاء</h3>
+                    <p>سجل عملائك بالنظام وتابع تاريخ المعاملات والفواتير والمدفوعات مع حفظ الملاحظات الطبية الخاصة بكل عميل</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><rect width='80' height='80' fill='%230053bd' rx='15'/><rect x='20' y='30' width='40' height='25' fill='white' rx='3'/><rect x='25' y='35' width='8' height='4' fill='%230053bd'/><rect x='36' y='35' width='15' height='2' fill='%230053bd'/><rect x='36' y='39' width='10' height='2' fill='%230053bd'/><rect x='25' y='45' width='8' height='4' fill='%230053bd'/><rect x='36' y='45' width='15' height='2' fill='%230053bd'/><rect x='36' y='49' width='10' height='2' fill='%230053bd'/></svg>" alt="إدارة المخزون">
+                    <h3>إدارة المخزون</h3>
+                    <p>تنظيم فائق للمخزون مع تتبع الأدوية بتاريخ الصلاحية ورقم الشحنة وإدارة الباركود لسهولة الاستدعاء</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><rect width='80' height='80' fill='%2342b72a' rx='15'/><rect x='20' y='25' width='40' height='30' fill='white' rx='3'/><rect x='25' y='30' width='12' height='2' fill='%2342b72a'/><rect x='40' y='30' width='15' height='2' fill='%2342b72a'/><rect x='25' y='35' width='8' height='2' fill='%2342b72a'/><rect x='25' y='40' width='20' height='2' fill='%2342b72a'/><rect x='25' y='45' width='15' height='2' fill='%2342b72a'/><circle cx='50' cy='45' r='3' fill='%230053bd'/></svg>" alt="الفواتير الإلكترونية">
+                    <h3>الفواتير الإلكترونية</h3>
+                    <p>إصدار فواتير احترافية تتضمن QR Code والضرائب مع حساب خصومات التأمين الطبي تلقائياً</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><rect width='80' height='80' fill='%230053bd' rx='15'/><circle cx='40' cy='30' r='8' stroke='white' stroke-width='3' fill='none'/><path d='M32 50c0-8 8-12 8-12s8 4 8 12v10H32v-10z' fill='white'/><rect x='38' y='26' width='4' height='8' fill='white'/><rect x='36' y='28' width='8' height='4' fill='white'/></svg>" alt="التأمينات الطبية">
+                    <h3>التأمينات الطبية</h3>
+                    <p>إدارة شاملة لشركات التأمين وحساب نسب التأمين والخصم على الأدوية والخدمات حسب الفئات التأمينية المختلفة</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><rect width='80' height='80' fill='%2342b72a' rx='15'/><rect x='25' y='25' width='30' height='20' fill='white' rx='3'/><rect x='30' y='30' width='5' height='5' fill='%2342b72a'/><rect x='37' y='30' width='13' height='2' fill='%2342b72a'/><rect x='37' y='33' width='10' height='2' fill='%2342b72a'/><rect x='30' y='37' width='5' height='5' fill='%2342b72a'/><rect x='37' y='37' width='13' height='2' fill='%2342b72a'/><rect x='37' y='40' width='8' height='2' fill='%2342b72a'/><circle cx='40' cy='55' r='8' stroke='white' stroke-width='2' fill='none'/><rect x='38' y='53' width='4' height='4' fill='white'/></svg>" alt="نقاط البيع">
+                    <h3>نقاط البيع</h3>
+                    <p>برنامج نقاط بيع احترافي يدعم أجهزة الباركود والشاشات التي تعمل باللمس مع إمكانية العمل بدون انترنت</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'><rect width='80' height='80' fill='%230053bd' rx='15'/><circle cx='40' cy='40' r='20' stroke='white' stroke-width='3' fill='none'/><path d='M30 40l8 8 12-16' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>" alt="المصروفات">
+                    <h3>إدارة المصروفات</h3>
+                    <p>تسجيل وتصنيف المصروفات المختلفة مع إصدار تقارير الأرباح اليومية والشهرية لمعرفة صافي الربح</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="analytics" id="analytics">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>تحليل المخزون</h2>
+                <p>رؤى فورية حول حالة المخزون لتحسين عمليات الصيدلية</p>
+            </div>
+            <div class="analytics-grid">
+                <div class="analytics-card fade-in">
+                    <h3>إجمالي الأدوية</h3>
+                    <p id="totalMedicines">0</p>
+                    <span>عدد الأصناف في المخزون</span>
+                </div>
+                <div class="analytics-card fade-in">
+                    <h3>أدوية منخفضة المخزون</h3>
+                    <p id="lowStock">0</p>
+                    <span>الأدوية التي تحتاج إلى إعادة تعبئة (أقل من 10 وحدات)</span>
+                </div>
+                <div class="analytics-card fade-in">
+                    <h3>الأدوية منتهية الصلاحية</h3>
+                    <p id="expiredMedicines">0</p>
+                    <span>الأدوية التي انتهت صلاحيتها</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>آراء العملاء</h2>
+                <p>تعرف على تجارب الصيدليات التي تستخدم دفترة</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <p>“نظام دفترة جعل إدارة المخزون والفواتير أسهل بكثير. التقارير اليومية ساعدتنا في اتخاذ قرارات أفضل.”</p>
+                    <div class="author">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'><circle cx='25' cy='25' r='25' fill='%2342b72a'/><circle cx='25' cy='20' r='8' fill='white'/><path d='M15 35c0-5 5-7 10-7s10 2 10 7v5H15z' fill='white'/></svg>" alt="محمد صالح">
+                        <div>
+                            <h4>محمد صالح</h4>
+                            <span>مدير صيدلية المجد</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p>“إدارة العملاء وشركات التأمين أصبحت سلسة بفضل دفترة. أنصح به بشدة!”</p>
+                    <div class="author">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'><circle cx='25' cy='25' r='25' fill='%230053bd'/><circle cx='25' cy='20' r='8' fill='white'/><path d='M15 35c0-5 5-7 10-7s10 2 10 7v5H15z' fill='white'/></svg>" alt="سارة أحمد">
+                        <div>
+                            <h4>سارة أحمد</h4>
+                            <span>صيدلية الشفاء</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <p>“نقاط البيع في دفترة مريحة للغاية، خاصة مع دعم الباركود والعمل دون إنترنت.”</p>
+                    <div class="author">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'><circle cx='25' cy='25' r='25' fill='%2342b72a'/><circle cx='25' cy='20' r='8' fill='white'/><path d='M15 35c0-5 5-7 10-7s10 2 10 7v5H15z' fill='white'/></svg>" alt="خالد محمود">
+                        <div>
+                            <h4>خالد محمود</h4>
+                            <span>صيدلية النور</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo" id="demo-medicines">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>إدارة الأدوية (CRUD)</h2>
+                <p>جرب عمليات الإضافة، القراءة، التعديل، والحذف للأدوية بشكل تجريبي</p>
+            </div>
+            
+            <div class="table-container">
+                <table id="medicinesTable">
+                    <thead>
+                        <tr>
+                            <th>اسم الدواء</th>
+                            <th>كود الدواء</th>
+                            <th>تاريخ الصلاحية</th>
+                            <th>الكمية</th>
+                            <th>إجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="form-container fade-in">
+                <h3 id="formTitle">إضافة دواء جديد</h3>
+                <div id="medicineSuccess" class="success-message"></div>
+                <div id="medicineError" class="error-message"></div>
+                <form id="medicineForm">
+                    <input type="hidden" id="editIndex">
+                    <div>
+                        <label for="medName">اسم الدواء:</label>
+                        <input type="text" id="medName" required>
+                        <div id="medNameError" class="error-message">الرجاء إدخال اسم الدواء</div>
+                    </div>
+                    <div>
+                        <label for="medCode">كود الدواء:</label>
+                        <input type="text" id="medCode" required>
+                        <div id="medCodeError" class="error-message">الرجاء إدخال كود دواء فريد</div>
+                    </div>
+                    <div>
+                        <label for="medExpiry">تاريخ الصلاحية:</label>
+                        <input type="date" id="medExpiry" required>
+                        <div id="medExpiryError" class="error-message">الرجاء إدخال تاريخ صلاحية صالح</div>
+                    </div>
+                    <div>
+                        <label for="medQuantity">الكمية:</label>
+                        <input type="number" id="medQuantity" required min="1">
+                        <div id="medQuantityError" class="error-message">الرجاء إدخال كمية أكبر من 0</div>
+                    </div>
+                    <button type="submit" class="main-btn">حفظ</button>
+                    <button type="button" id="cancelEdit" style="display: none;" class="sub-btn">إلغاء</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="demo" id="demo-customers">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>إدارة العملاء (CRUD)</h2>
+                <p>جرب عمليات الإضافة، القراءة، التعديل، والحذف للعملاء بشكل تجريبي</p>
+            </div>
+            
+            <div class="table-container">
+                <table id="customersTable">
+                    <thead>
+                        <tr>
+                            <th>اسم العميل</th>
+                            <th>رقم الهاتف</th>
+                            <th>البريد الإلكتروني</th>
+                            <th>شركة التأمين</th>
+                            <th>إجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="form-container fade-in">
+                <h3 id="customerFormTitle">إضافة عميل جديد</h3>
+                <div id="customerSuccess" class="success-message"></div>
+                <div id="customerError" class="error-message"></div>
+                <form id="customerForm">
+                    <input type="hidden" id="customerEditIndex">
+                    <div>
+                        <label for="custName">اسم العميل:</label>
+                        <input type="text" id="custName" required>
+                        <div id="custNameError" class="error-message">الرجاء إدخال اسم العميل</div>
+                    </div>
+                    <div>
+                        <label for="custPhone">رقم الهاتف:</label>
+                        <input type="tel" id="custPhone" required pattern="[0-9]{10,}">
+                        <div id="custPhoneError" class="error-message">الرجاء إدخال رقم هاتف صالح (10 أرقام على الأقل)</div>
+                    </div>
+                    <div>
+                        <label for="custEmail">البريد الإلكتروني:</label>
+                        <input type="email" id="custEmail" required>
+                        <div id="custEmailError" class="error-message">الرجاء إدخال بريد إلكتروني صالح</div>
+                    </div>
+                    <div>
+                        <label for="custInsurance">شركة التأمين:</label>
+                        <input type="text" id="custInsurance">
+                        <div id="custInsuranceError" class="error-message">الرجاء إدخال اسم شركة التأمين</div>
+                    </div>
+                    <button type="submit" class="main-btn">حفظ</button>
+                    <button type="button" id="customerCancelEdit" style="display: none;" class="sub-btn">إلغاء</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>خطط الأسعار</h2>
+                <p>اختر الخطة التي تناسب احتياجات صيدليتك</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card fade-in">
+                    <h3>الخطة المجانية</h3>
+                    <p class="price">مجاناً</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> إدارة حتى 50 دواء</li>
+                        <li><i class="fas fa-check-circle"></i> ملفات لـ10 عملاء</li>
+                        <li><i class="fas fa-check-circle"></i> تقارير أساسية</li>
+                        <li><i class="fas fa-times-circle"></i> دعم التأمينات</li>
+                    </ul>
+                    <a href="#" class="main-btn">ابدأ الآن</a>
+                </div>
+                <div class="pricing-card fade-in">
+                    <h3>الخطة القياسية</h3>
+                    <p class="price">$19/شهر</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> إدارة أدوية غير محدودة</li>
+                        <li><i class="fas fa-check-circle"></i> ملفات عملاء غير محدودة</li>
+                        <li><i class="fas fa-check-circle"></i> تقارير متقدمة</li>
+                        <li><i class="fas fa-check-circle"></i> دعم التأمينات</li>
+                    </ul>
+                    <a href="#" class="main-btn">اشترك الآن</a>
+                </div>
+                <div class="pricing-card fade-in">
+                    <h3>الخطة المميزة</h3>
+                    <p class="price">$49/شهر</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> جميع ميزات الخطة القياسية</li>
+                        <li><i class="fas fa-check-circle"></i> نقاط بيع متقدمة</li>
+                        <li><i class="fas fa-check-circle"></i> دعم فني مميز</li>
+                        <li><i class="fas fa-check-circle"></i> تحليلات مخصصة</li>
+                    </ul>
+                    <a href="#" class="main-btn">اشترك الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>اتصل بنا</h2>
+                <p>تواصل مع فريقنا للحصول على الدعم أو للاستفسار عن خدماتنا</p>
+            </div>
+            <div class="form-container fade-in">
+                <div id="contactSuccess" class="success-message"></div>
+                <div id="contactError" class="error-message"></div>
+                <form id="contactForm">
+                    <div>
+                        <label for="contactName">الاسم:</label>
+                        <input type="text" id="contactName" required>
+                        <div id="contactNameError" class="error-message">الرجاء إدخال الاسم</div>
+                    </div>
+                    <div>
+                        <label for="contactEmail">البريد الإلكتروني:</label>
+                        <input type="email" id="contactEmail" required>
+                        <div id="contactEmailError" class="error-message">الرجاء إدخال بريد إلكتروني صالح</div>
+                    </div>
+                    <div>
+                        <label for="contactSubject">الموضوع:</label>
+                        <input type="text" id="contactSubject" required>
+                        <div id="contactSubjectError" class="error-message">الرجاء إدخال الموضوع</div>
+                    </div>
+                    <div>
+                        <label for="contactMessage">الرسالة:</label>
+                        <textarea id="contactMessage" required rows="5"></textarea>
+                        <div id="contactMessageError" class="error-message">الرجاء إدخال الرسالة</div>
+                    </div>
+                    <button type="submit" class="main-btn">إرسال</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content fade-in">
+                <h2>ابدأ تجربتك المجانية اليوم</h2>
+                <p>
+                    انضم إلى آلاف الصيدليات التي تثق في دفترة لإدارة أعمالها<br>
+                    تجربة مجانية - بدون بطاقة ائتمان - جاهز فوراً للعمل
+                </p>
+                <div id="generalSuccess" class="success-message"></div>
+                <a href="#" class="cta-btn">ابدأ الاستخدام مجاناً</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>دفترة</h3>
+                    <p>نظام إدارة أعمال متكامل يساعد الشركات والمؤسسات في إدارة جميع عملياتها المحاسبية والإدارية بكفاءة عالية.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>الخدمات</h3>
+                    <p><a href="#features">إدارة المبيعات</a></p>
+                    <p><a href="#analytics">تحليل المخزون</a></p>
+                    <p><a href="#features">الفواتير الإلكترونية</a></p>
+                    <p><a href="#features">نقاط البيع</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>الدعم</h3>
+                    <p><a href="#">مركز المساعدة</a></p>
+                    <p><a href="#">الدعم الفني</a></p>
+                    <p><a href="#">دليل الاستخدام</a></p>
+                    <p><a href="#">تواصل معنا</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>تابعنا</h3>
+                    <p>
+                        <a href="#" style="margin-left: 10px;"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="margin-left: 10px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="margin-left: 10px;"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 دفترة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
