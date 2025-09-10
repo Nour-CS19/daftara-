@@ -1,4 +1,3 @@
-// Page load animation
 window.addEventListener('load', function() {
     const loading = document.getElementById('loading');
     if (loading) {
@@ -21,7 +20,6 @@ if (header) {
     });
 }
 
-// Mobile menu toggle
 const mobileMenu = document.getElementById('mobileMenu');
 const navLinks = document.getElementById('navLinks');
 
@@ -52,7 +50,6 @@ if (mobileMenu && navLinks) {
     });
 }
 
-// Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -69,7 +66,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Scroll animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -30px 0px'
@@ -87,7 +83,6 @@ document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(e
     observer.observe(el);
 });
 
-// Scroll to top button
 const scrollTop = document.getElementById('scrollTop');
 
 if (scrollTop) {
@@ -107,7 +102,6 @@ if (scrollTop) {
     });
 }
 
-// Typing effect for hero title
 function typeWriter(element, text, speed = 80) {
     if (!element) return;
     
@@ -143,9 +137,7 @@ function addFloatingAnimation() {
 
 addFloatingAnimation();
 
-// Add click events to CTA buttons with ripple effect
 document.querySelectorAll('.main-btn, .cta-btn').forEach(btn => {
-    // Exclude edit/delete buttons in tables
     if (btn.closest('#medicinesTable') || btn.closest('#customersTable')) return;
     
     btn.addEventListener('click', function(e) {
@@ -168,21 +160,17 @@ document.querySelectorAll('.main-btn, .cta-btn').forEach(btn => {
             ripple.remove();
         }, 600);
         
-        // Re-render tables to display saved data
         renderMedicines();
         renderCustomers();
         
-        // Show success message
         showMessage('generalSuccess', 'تم عرض البيانات المحفوظة بنجاح');
         
-        // Redirect to registration page after a delay
         setTimeout(() => {
             window.location.href = 'registration.html';
-        }, 2000); // Delay to allow message to be visible
+        }, 2000); 
     });
 });
 
-// Performance optimization: Lazy load images
 const images = document.querySelectorAll('img');
 const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -199,7 +187,6 @@ const imageObserver = new IntersectionObserver((entries, observer) => {
 
 images.forEach(img => imageObserver.observe(img));
 
-// Add keyboard navigation support
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape' && navLinks && navLinks.classList.contains('active')) {
         navLinks.classList.remove('active');
@@ -219,7 +206,6 @@ document.addEventListener('keydown', function(e) {
     }
 });
 
-// Input sanitization to prevent XSS
 function sanitizeInput(input) {
     const div = document.createElement('div');
     div.textContent = input;
@@ -240,7 +226,6 @@ function saveToLocalStorage(key, data) {
     }
 }
 
-// CRUD for Medicines with localStorage
 function loadMedicines() {
     try {
         const stored = localStorage.getItem('medicines');
